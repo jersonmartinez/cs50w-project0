@@ -249,7 +249,7 @@ a.web50-a-effect:hover {
   top: 1px;
 }
 
-.bt .divider {
+.cs-social-list .icon::before, .bt .divider {
   position: relative;
 }
 
@@ -335,7 +335,6 @@ ul.cs-social-list a:hover {
 }
 
 .cs-social-list .icon::before {
-  position: relative;
   display: inline-block;
   font-weight: 400;
   font-style: normal;

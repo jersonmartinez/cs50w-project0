@@ -108,10 +108,12 @@ a.web50-a-effect:hover {
 	direction: ltr;
 }
 
-.elementor-shape-top svg {
-	width: calc(300% + 1.3px);
-	height: 144px;
-	transform: translateX(-50%) rotateY(180deg);
+.elementor-shape-top {
+    svg {
+	    width: calc(300% + 1.3px);
+	    height: 144px;
+	    transform: translateX(-50%) rotateY(180deg);
+    }
 }
 
 .elementor-shape svg {
@@ -239,8 +241,13 @@ a.web50-a-effect:hover {
 .bt .divider:not(:first-child) {
     top: 1px;
 }
-.bt .divider {
+
+%position-relative {
     position: relative;
+}
+
+.bt .divider {
+    @extend %position-relative;
 }
 
 .bt .divider svg {
@@ -328,7 +335,7 @@ ul.cs-social-list a:hover {
 }
 
 .cs-social-list .icon::before {
-    position: relative;
+    @extend %position-relative;
     display: inline-block;
     font-weight: 400;
     font-style: normal;
